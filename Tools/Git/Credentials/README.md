@@ -28,7 +28,7 @@ git config --global credential.helper store
 
 - On home user create `.gitconfig` file:
 
-```yaml
+```
 [user]
 	name = <Your Git user>
 	email = <Your Git email>

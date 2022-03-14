@@ -13,8 +13,7 @@ mv ./kind /usr/local/bin/kind
 ## Completion for KinD
 
 ```sh
-kind completion bash > kind_completion
-mv kind_completion /etc/bash_completion.d/.
+kind completion bash | sudo tee /etc/bash_completion.d/kind_completion
 ```
 
 ## Basic interaction with KinD clusters

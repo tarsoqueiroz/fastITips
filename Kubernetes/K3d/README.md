@@ -1,4 +1,4 @@
-# KinD - (K)ubernetes (IN) (D)ocker
+# K3d - Lightweight wrapper to run (K3)s in (d)ocker
 
 ## What is k3d?
 

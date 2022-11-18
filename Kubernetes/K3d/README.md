@@ -12,7 +12,7 @@ Note: k3d is a community-driven project, that is supported by Rancher (SUSE) and
 
 ## Install K3d
 
-Install current latest release
+Install or update to current latest release:
 
 - wget: 
 
@@ -59,17 +59,22 @@ k3d cluster delete k3d-cluster
 
 ```yaml
 # k3d configuration file, saved as e.g. /home/me/myk3dcluster.yaml
-apiVersion: k3d.io/v1alpha4 # this will change in the future as we make everything more stable
-kind: Simple # internally, we also have a Cluster config, which is not yet available externally
+apiVersion: k3d.io/v1alpha4      # this will change in the future as we make everything more stable
+
+kind: Simple                     # internally, we also have a Cluster config, which is not yet available externally
+
 metadata:
-  name: multinode # name that you want to give to your cluster (will still be prefixed with `k3d-`)
-servers: 3 # same as `--servers 3`
-agents: 3  # same as `--agents 3`
-kubeAPI: # same as `--api-port 0.0.0.0:6443` (where the name would resolve to 0.0.0.0)
-#  host: "my.k3d.domain" # important for the `server` setting in the kubeconfig
-  hostIP: "0.0.0.0" # where the Kubernetes API will be listening on
-  hostPort: "6443" # where the Kubernetes API listening port will be mapped to on your host system
-image: rancher/k3s:v1.22.6-k3s1 # same as `--image rancher/k3s:v1.22.6-k3s1`
+  name: multinode                # name that you want to give to your cluster (will still be prefixed with `k3d-`)
+
+servers: 3                       # same as `--servers 3`
+agents: 3                        # same as `--agents 3`
+
+kubeAPI:                         # same as `--api-port 0.0.0.0:6443` (where the name would resolve to 0.0.0.0)
+# host: "my.k3d.domain"          # important for the `server` setting in the kubeconfig
+  hostIP: "0.0.0.0"              # where the Kubernetes API will be listening on
+  hostPort: "6443"               # where the Kubernetes API listening port will be mapped to on your host system
+
+image: rancher/k3s:v1.23.6-k3s1  # same as `--image rancher/k3s:v1.23.6-k3s1`
 ```
 
 - So it's time to create and play 

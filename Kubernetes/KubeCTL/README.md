@@ -13,7 +13,14 @@ You must use a kubectl version that is within one minor version difference of yo
 Install steps on "Installation" at `https://minikube.sigs.k8s.io/docs/start/`:
 
 ```sh
+# Current stable version
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+
+# OR 
+
+# Specific version0
+curl -LO https://dl.k8s.io/release/v1.25.0/bin/linux/amd64/kubectl
+
 sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 rm kubectl
 ```

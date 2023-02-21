@@ -4,9 +4,9 @@
 
 Go to:
 
-> `Settings -> Developer Settings -> Personal Access Tokens`
+> `Settings -> Developer Settings -> Personal Access Tokens -> Tokens (classic)`
 
-Select "[Generate new token](https://github.com/settings/tokens/new)"
+Select "[Generate new token -> Generate new token (classic)](https://github.com/settings/tokens/new)"
 
 Insert "Note" to fast and easy identification.
 

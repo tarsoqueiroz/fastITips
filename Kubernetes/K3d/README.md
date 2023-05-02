@@ -14,13 +14,13 @@ Note: k3d is a community-driven project, that is supported by Rancher (SUSE) and
 
 Install or update to current latest release:
 
-- wget: 
+- wget
 
 ```sh
 wget -q -O - https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | bash
 ```
 
-- curl: 
+- curl
 
 ```sh
 curl -s https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | bash

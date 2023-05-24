@@ -31,6 +31,13 @@ rm kubectl
 kubectl completion bash | sudo tee /etc/bash_completion.d/kubectl_completion
 ```
 
+## Alias creation for kubectl
+
+```sh
+alias ku=kubectl
+complete -F __start_kubectl ku
+```
+
 ## Basic usage
 
 ```sh

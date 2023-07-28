@@ -5,14 +5,11 @@
 ## Install KinD
 
 ```sh
-# For AMD64 / x86_64
-[ $(uname -m) = x86_64 ] && curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.19.0/kind-linux-amd64
+curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.20.0/kind-linux-amd64
 
-# For ARM64
-[ $(uname -m) = aarch64 ] && curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.19.0/kind-linux-arm64
+sudo install -o root -g root -m 0755 kind /usr/local/bin/kind
 
-chmod +x ./kind
-sudo mv ./kind /usr/local/bin/kind
+rm kind
 ```
 
 ## Completion for KinD

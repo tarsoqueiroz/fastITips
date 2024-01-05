@@ -4,6 +4,8 @@
 
 Red Hat OpenShift Local (formerly Red Hat CodeReady Containers) is the quickest way to get started building OpenShift clusters. It is designed to run on a local computer to simplify setup and testing, and to emulate the cloud development environment locally with all of the tools needed to develop container-based applications.
 
+More info:
+
 > `https://developers.redhat.com/products/openshift-local/overview`
 
 ## Prereq for OpenShift Container Platform
@@ -11,6 +13,12 @@ Red Hat OpenShift Local (formerly Red Hat CodeReady Containers) is the quickest 
 - 4 physical CPU cores
 - 9 GB of free memory
 - 35 GB of storage space
+
+Requirements on Linux:
+
+- On Linux, CRC is supported only on the latest two Red Hat Enterprise Linux/CentOS 8 and 9 minor releases and on the latest two stable Fedora releases.
+- When using Red Hat Enterprise Linux, the machine running CRC must be registered with the Red Hat Customer Portal.
+- Ubuntu 18.04 LTS or later and Debian 10 or later are not supported and might require manual set up of the host machine.
 
 Required software packages for Linux:
 
@@ -58,13 +66,13 @@ Red Hat OpenShift Local presets represent a managed container runtime, and the l
 crc setup
 ```
 
-### Changing the presets for CPU and Memory
+### Changing the presets for CPU and Memory (optional)
 
 ```sh
-# to change CPU's (default 4)
-crc config set cpus 6
-# to change Memory (default 9216 - 9GB)
-crc config set memory 16384
+# to change CPU's (default 2)
+crc config set cpus 4
+# to change Memory (default 2048 - 2GB)
+crc config set memory 9216
 ```
 
 ## Starting tool

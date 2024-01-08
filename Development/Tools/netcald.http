@@ -1,0 +1,8 @@
+### Variables
+@urlNetworkCalc = https://networkcalc.com/api/ip/
+
+### GET Calculate a ip network
+# @prompt ipAddress Inform IP Address
+# @prompt subNet Inform SubNet mask
+GET {{urlNetworkCalc}}/{{ipAddress}}/{{subNet}}?binary=true HTTP/1.1
+Content-type: application/json

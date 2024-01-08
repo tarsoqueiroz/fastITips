@@ -1,0 +1,28 @@
+### Variables
+@urlBrasilApi = https://brasilapi.com.br/api
+
+### GET banks
+GET {{urlBrasilApi}}/banks/v1
+Content-Type: application/json
+
+### GET the bank
+# @prompt ispbCode Inform the Bank code:
+GET {{urlBrasilApi}}/banks/v1/{{ispbCode}}
+Content-type: application/json
+
+### GET the cep
+# @prompt cepCode Inform the CEP:
+GET {{urlBrasilApi}}/cep/v1/{{cepCode}} HTTP/1.1
+Content-type: application/json
+
+### GET the cep v2
+# @prompt cepCode Inform the CEP:
+GET {{urlBrasilApi}}/cep/v2/{{cepCode}} HTTP/1.1
+Content-type: application/json
+
+### GET feriados
+# @prompt anoFeriados Inform year:
+GET {{urlBrasilApi}}/feriados/v1/{{anoFeriados}} HTTP/1.1
+Content-type: application/json
+
+

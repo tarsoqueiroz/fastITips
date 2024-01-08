@@ -44,10 +44,16 @@ cd ~/Downloads
 tar xvf crc-linux-amd64.tar.xz
 ```
 
-- Copy the `crc` executable to a general directory:
+- Install the `crc` executable to a general directory:
 
 ```sh
-sudo cp ~/Downloads/crc-linux-*-amd64/crc /usr/local/bin
+sudo install -o root -g root -m 0755 ~/Downloads/crc-linux-2.30.0-amd64/crc /usr/local/bin/crc
+```
+
+- Generate and configure autocompletion for bash shell
+
+```sh
+crc completion bash | sudo tee /etc/bash_completion.d/crc_completion
 ```
 
 - Finally, try it:
@@ -106,12 +112,21 @@ Use the 'oc' command line interface:
   $ oc login -u developer https://api.crc.testing:6443
 ```
 
-Copy `oc` tool for this release of the Red Hat OpenShift Local:
+- Install `oc` tool for this release of the Red Hat OpenShift Local:
 
 ```sh
-sudo cp ~/.crc/cache/crc_libvirt_4.14.3_amd64/oc /usr/local/bin
+sudo install -o root -g root -m 0755 ~/.crc/cache/crc_libvirt_4.14.3_amd64/oc /usr/local/bin/oc
+```
 
-# try it
+- Generate and configure autocompletion for bash shell
+
+```sh
+oc completion bash | sudo tee /etc/bash_completion.d/crc_completion
+```
+
+- Try it
+
+```sh
 oc version
 ```
 

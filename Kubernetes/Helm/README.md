@@ -23,8 +23,6 @@ tar -zxvf ./helm-v3.14.0-linux-amd64.tar.gz
 - Install the helm binary:
 
 ```shell
-sudo install linux-amd64/helm /usr/local/bin/
-
 sudo install -o root -g root -m 0755 linux-amd64/helm /usr/local/bin/helm
 rm -rf linux-amd64
 ```

@@ -25,3 +25,10 @@ scheme:[//authority]path[?query][#fragment]
 - **URN**:  stands for ***Uniform Resource Name***. It uses the urn scheme. URNs cannot be used to locate a resource. A simple example given in the diagram is composed of a namespace and a namespace-specific string.
 
 If you would like to learn more detail on the subject, I would recommend W3C’s clarification.
+
+[Go top](#miscelaneous)
+
+## Next topic coming
+
+[Go top](#miscelaneous)
+

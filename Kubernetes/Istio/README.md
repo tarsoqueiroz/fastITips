@@ -14,8 +14,16 @@ cd ~/Downloads
 curl -L https://istio.io/downloadIstio | sh -
 cd istio-<version>
 
-sudo install -o root -g root -m 0755 bin/istioctl /usr/local/bin/
-```￼
+sudo rm -rf /usr/local/istio
+sudo mkdir /usr/local/istio
+
+sudo mv * -t /usr/local/istio
+
+sudo chown root:root -R /usr/local/istio
+sudo chmod 0755 -R /usr/local/istio
+
+sudo install -o root -g root -m 0755 /usr/local/istio/bin/istioctl /usr/local/bin/
+```
 
 Completion for Istio control shuld be executed this:
 

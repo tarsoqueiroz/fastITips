@@ -82,16 +82,17 @@ Color properties:
 
 ## Color Website
 
-- **Adobe Color** at `https://color.adobe.com`
-  - Color Wheel at `https://color.adobe.com/pt/create/color-wheel`
-  - Extract Theme at `https://color.adobe.com/pt/create/image`
-- **Coolors** at `https://coolors.co/`
-  - Color Contrast Checker at `https://coolors.co/contrast-checker`
-- **ColorSpace** at `https://mycolor.space`
+- **Adobe Color** at [`https://color.adobe.com`](https://color.adobe.com)
+  - Color Wheel at [`https://color.adobe.com/pt/create/color-wheel`](https://color.adobe.com/pt/create/color-wheel)
+  - Extract Theme at [`https://color.adobe.com/pt/create/image`](https://color.adobe.com/pt/create/image)
+- **Coolors** at [`https://coolors.co/`](https://coolors.co/)
+  - Color Contrast Checker at [`https://coolors.co/contrast-checker`](https://coolors.co/contrast-checker)
+- **ColorSpace** at [`https://mycolor.space`](https://mycolor.space)
 
 ## Color Interactions
 
 Change your pallete of collors to grayscale and evaluate all combinations. Discard problem's combinations.
 
-## Colors on a Website
+## That's all
 
+...folks!!!

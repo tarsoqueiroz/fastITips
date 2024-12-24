@@ -91,4 +91,7 @@ Color properties:
 
 ## Color Interactions
 
-...
+Change your pallete of collors to grayscale and evaluate all combinations. Discard problem's combinations.
+
+## Colors on a Website
+

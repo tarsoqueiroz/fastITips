@@ -1,10 +1,10 @@
 # Cilium
 
-Cilium is open source software for transparently securing the network connectivity between application services deployed using Linux container management platforms like Docker and Kubernetes.
+Cilium is a cloud native technology for networking, observability, and security.[1] It is based on the kernel technology eBPF, originally for better networking performance, and now leverages many additional features for different use cases.
 
 ## Release versions
 
-> [`https://github.com/kubernetes-sigs/kind/releases`](https://github.com/kubernetes-sigs/kind/releases)
+> [`https://github.com/cilium/cilium/releases`](https://github.com/cilium/cilium/releases)
 
 ## Quick install Cilio CLI
 
@@ -18,7 +18,7 @@ sudo tar xzvfC cilium-linux-amd64.tar.gz /usr/local/bin
 rm cilium-linux-amd64.tar.gz{,.sha256sum}
 ```
 
-## Completion for KinD
+## Completion for Cilium
 
 ```sh
 cilium completion bash | sudo tee /etc/bash_completion.d/cilium_completion
@@ -45,6 +45,6 @@ cilium status --wait
 cilium connectivity test
 ```
 
-## Congrats! That's
+## That's
 
-...all folks!!!
+...all folks!!! Congrats!

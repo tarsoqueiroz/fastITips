@@ -53,6 +53,23 @@ docker
 docker info
 ```
 
+## Behind Proxy: Configure the Docker Daemon for image pulls
+
+```sh
+## Create a directory for Docker's systemd unit overrides
+sudo mkdir -p /etc/systemd/system/docker.service.d
+
+## Create a configuration file /etc/systemd/system/docker.service.d/http-proxy.conf with your proxy details:
+[Service]
+Environment="HTTP_PROXY=http://proxy.example.com"
+Environment="HTTPS_PROXY=https://proxy.example.com"
+Environment="NO_PROXY=localhost,127.0.0.1,docker-registry.example.com,.corp"
+
+## Reload the systemd daemon and restart Docker:
+sudo systemctl daemon-reload
+sudo systemctl restart docker
+```
+
 ## Working with Docker images
 
 ```sh
